@@ -23,6 +23,7 @@ class AdminSendMail extends Mailable
     {
         return $this->subject($this->subjectLine)
                     ->view('emails.admin-send')
+                    ->text('emails.admin-send-text')
                     ->with([
                         'bodyMessage' => $this->bodyMessage
                     ]);
