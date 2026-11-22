@@ -11,17 +11,13 @@
             <td align="center">
                 <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; background-color: #ffffff; border: 1px solid #dde5ef; border-radius: 16px; overflow: hidden;">
                     <tr>
-                        <td style="padding: 24px 32px; background-color: #05264a;">
-                            <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                <tr>
-                                    <td width="42" height="42" align="center" valign="middle" style="width: 42px; height: 42px; background-color: #4c9aff; border-radius: 12px; color: #ffffff; font-size: 20px; font-weight: 700;">
-                                        {{ strtoupper(substr(config('app.name', 'Wallet'), 0, 1)) }}
-                                    </td>
-                                    <td style="padding-left: 12px; color: #ffffff; font-size: 18px; font-weight: 700; line-height: 42px;">
-                                        {{ config('app.name', 'Account Notification') }}
-                                    </td>
-                                </tr>
-                            </table>
+                        <td align="center" style="padding: 24px 32px; background-color: #05264a;">
+                            <img
+                                src="{{ asset('logo.png') }}"
+                                alt=""
+                                width="150"
+                                style="display: block; max-width: 150px; height: auto; border: 0;"
+                            >
                         </td>
                     </tr>
 
@@ -44,7 +40,7 @@
                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top: 1px solid #e8eef5; margin: 0;">
                                 <tr>
                                     <td style="padding-top: 20px; font-size: 12px; line-height: 1.6; color: #7a8999;">
-                                        This message was sent by {{ config('app.name', 'our service') }}. Do not share passwords or recovery phrases.
+                                        Do not share passwords or recovery phrases.
                                     </td>
                                 </tr>
                             </table>
