@@ -15,4 +15,6 @@ Route::get('/send-mail', function () {
 Route::get('/sent-emails', [SendEmailController::class, 'sentEmails'])->name('sent-emails');
 Route::get('/send-email', [SendEmailController::class, 'index'])->name('send.email');
 Route::post('/send-email', [SendEmailController::class, 'send'])->name('send.email.post');
+Route::delete('/sent-emails/{email}', [SendEmailController::class, 'destroy'])->name('sent-emails.destroy');
+Route::delete('/sent-emails', [SendEmailController::class, 'clearAll'])->name('sent-emails.clear');
 

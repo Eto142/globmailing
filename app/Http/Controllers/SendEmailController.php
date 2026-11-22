@@ -69,7 +69,22 @@ class SendEmailController extends Controller
 public function sentEmails()
 {
     $emails = SentEmail::latest()->paginate(20); // Paginate 20 per page
-    return view('home.sent_emails', compact('emails'));
+    $totalEmails = SentEmail::count();
+    return view('home.sent_emails', compact('emails', 'totalEmails'));
+}
+
+public function destroy(SentEmail $email)
+{
+    $email->delete();
+
+    return back()->with('success', 'Email record deleted successfully.');
+}
+
+public function clearAll()
+{
+    SentEmail::truncate();
+
+    return back()->with('success', 'All sent email records have been cleared.');
 }
 
 }

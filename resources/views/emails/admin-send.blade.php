@@ -40,7 +40,7 @@
                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top: 1px solid #e8eef5; margin: 0;">
                                 <tr>
                                     <td style="padding-top: 20px; font-size: 12px; line-height: 1.6; color: #7a8999;">
-                                        Do not share passwords or recovery phrases.
+                                       
                                     </td>
                                 </tr>
                             </table>
