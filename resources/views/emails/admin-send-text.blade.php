@@ -2,4 +2,5 @@
 
 {{ $bodyMessage }}
 
-Do not share passwords or recovery phrases.
+This email was sent from your account notification service.
+Never share passwords, recovery phrases, or private keys.
